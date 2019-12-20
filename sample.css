@@ -87,3 +87,7 @@ body{
 .sample .dropdown1:hover .dropdown-content {
     display: block;
 }
+
+.right {
+  float: right !important;
+}
