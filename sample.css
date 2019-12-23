@@ -35,7 +35,6 @@ body{
   background-color: inherit;
   font-family: inherit;
   margin: 0;
-  width: 100%;
 }
 
 .sample .navbar .navbtn:hover, .sample .dropdown:hover .dropbtn, .sample .dropbtn:focus {
@@ -63,6 +62,7 @@ body{
   margin: 0;
   border: none;
   outline: none;
+  width: 100%;
 }
 
 .sample .dropdown-content .dropdownNavbtn:hover {
