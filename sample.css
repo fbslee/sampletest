@@ -39,7 +39,7 @@ body{
 }
 
 .sample .navbar .navbtn:hover, .sample .dropdown:hover .dropbtn, .sample .dropbtn:focus {
-  background-color: red;
+  background-color: #f5f5f562;
 }
 
 .sample .dropdown-content {
@@ -93,7 +93,7 @@ body{
 }
 
 .sample .navbar .navbtn:hover, .sample .dropdown1:hover .dropbtn1 {
-  background-color: red;
+  background-color: #f5f5f562;
 }
 
 .sample .dropdown1:hover .dropdown-content {
