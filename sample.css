@@ -9,6 +9,7 @@ body{
 }
 
 .sample .navbar .navbtn {
+  cursor: pointer;
   float: left;
   font-size: 16px;  
   border: none;
@@ -74,27 +75,28 @@ body{
 }
 
 .sample .dropdown1 {
-    float: left;
-    overflow: hidden;
+  float: left;
+  overflow: hidden;
 }
 
 .sample .dropdown1 .dropbtn1 {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
 }
 
 .sample .navbar .navbtn:hover, .sample .dropdown1:hover .dropbtn1 {
-    background-color: red;
+  background-color: red;
 }
 
 .sample .dropdown1:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
 .right {
