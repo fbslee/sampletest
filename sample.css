@@ -124,3 +124,7 @@ body{
   outline: none;
   background-color: transparent;
 }
+
+.footerbtn:hover{
+  font-weight: 600;
+}
