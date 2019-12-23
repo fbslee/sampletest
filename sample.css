@@ -10,11 +10,14 @@ body{
 
 .sample .navbar .navbtn {
   float: left;
-  font-size: 16px;
+  font-size: 16px;  
+  border: none;
+  outline: none;
   color: white;
-  text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
 }
 
 .sample .dropdown {
