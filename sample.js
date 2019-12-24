@@ -3,7 +3,7 @@ function toggleOptions() {
 }
 
 function navigateTo(location){
-    alert('navigation to ' + location);
+    alert('navigating to ' + window.location.href + ' ' + location);
 }
 
 // Close the dropdown if the user clicks outside of it
