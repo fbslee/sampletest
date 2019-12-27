@@ -28,11 +28,11 @@ body{
 
 .sample .dropdown .dropbtn {
   cursor: pointer;
-  font-size: 16px;  
+  font-size: 18px;  
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
+  padding: 13px 16px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
@@ -82,11 +82,11 @@ body{
 
 .sample .dropdown1 .dropbtn1 {
   cursor: pointer;
-  font-size: 16px;  
+  font-size: 18px;  
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
+  padding: 13px 16px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
