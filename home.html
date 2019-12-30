@@ -5,10 +5,10 @@
 <title>Sample Test</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="https://raw.githack.com/fbslee/sampletest/master/sample.css">
-<!-- <link rel="stylesheet" type="text/css" href="sample.css"> -->
-<script type="text/javascript" src="https://raw.githack.com/fbslee/sampletest/master/sample.js"></script>
-<!-- <script type="text/javascript" src="sample.js"></script> -->
+<!-- <link rel="stylesheet" type="text/css" href="https://raw.githack.com/fbslee/sampletest/master/sample.css"> -->
+<link rel="stylesheet" type="text/css" href="sample.css">
+<!-- <script type="text/javascript" src="https://raw.githack.com/fbslee/sampletest/master/sample.js"></script> -->
+<script type="text/javascript" src="sample.js"></script>
 <script type="text/javascript">
 var logo = "";
 function hexToBase64(str) {
@@ -16,7 +16,11 @@ function hexToBase64(str) {
 }
 function settingUpLogo(){
   var logoimg = document.getElementById("logoImage");
-  // logoimg.src = "data:image/png;base64," + hexToBase64(logo.substring(2));
+  // if(logo.substring(0,2) === "0x"){
+  //   logoimg.src = "data:image/png;base64," + hexToBase64(logo.substring(2));
+  // } else {
+  //   logoimg.src = "data:image/png;base64," + hexToBase64(logo);
+  // }
 }
 </script>
 </head>
@@ -27,51 +31,70 @@ function settingUpLogo(){
   </div>
   <div class="navbar">
     <button class="navbtn" onclick="navigateTo('home')">Home</button>
-    <button class="navbtn" onclick="navigateTo('account')">Account</button>
-    <button class="navbtn" onclick="navigateTo('gain-loss')">Gain & Loss</button>
-    <button class="navbtn" onclick="navigateTo('documents')">Documents</button>
-    <button class="navbtn" onclick="navigateTo('tools')">Tools</button>
-    <button class="navbtn" onclick="navigateTo('profile-preferences')">Profile/ Preferences</button>
-    <div class="dropdown1 right">
-      <button class="dropbtn1">
-        <i class="fa fa-user-circle"></i>
-        <i class="fa fa-caret-down"></i>
+    <div class="dropdown dropdown-accounts">
+      <button class="dropbtn dropbtn-accounts">
+        Accounts
       </button>
-      <div class="dropdown-content">
-        <button class="dropdownNavbtn" onclick="navigateTo('contact')">Contact Us</button>
-        <button class="dropdownNavbtn" onclick="navigateTo('user-preference')">User Preference</button>
-        <button class="dropdownNavbtn" onclick="navigateTo('account-preference')">Account Preference</button>
-        <button class="dropdownNavbtn" onclick="navigateTo('help')">Help</button>
-        <button class="dropdownNavbtn" onclick="navigateTo('log-out')">Log Out</button>
+      <div class="dropdown-content dropdown-accounts-content">
+        <button class="dropdownNavbtn" onclick="navigateTo('accounts-balance')">Balances</button>
+        <button class="dropdownNavbtn" onclick="navigateTo('accounts-holding')">Holdings</button>
+        <button class="dropdownNavbtn" onclick="navigateTo('accounts-holdingZoom')">Holdings Zoom</button>
+        <button class="dropdownNavbtn" onclick="navigateTo('accounts-history')">History</button>
+        <button class="dropdownNavbtn" onclick="navigateTo('accounts-unrealizedGainLoss')">Unrealized Gains/Loss</button>
+        <button class="dropdownNavbtn" onclick="navigateTo('accounts-realizedGainLoss')">Realized Gains/Loss</button>
+        <button class="dropdownNavbtn" onclick="navigateTo('accounts-asset')">Asset Allocation</button>
+        <button class="dropdownNavbtn" onclick="navigateTo('accounts-download')">Download</button>
       </div>
     </div>
-  </div>
-
-  <br><br>
-
-  <div class="navbar">
-      <button class="navbtn" onclick="navigateTo('home')"><img src="https://clientlink.wedbush.com/img/3barWedbush.png" id="logoBtn" height="14px" alt="home"></button>
-      <button class="navbtn" onclick="navigateTo('account')">Account</button>
-      <button class="navbtn" onclick="navigateTo('gain-loss')">Gain & Loss</button>
-      <button class="navbtn" onclick="navigateTo('documents')">Documents</button>
-      <button class="navbtn" onclick="navigateTo('tools')">Tools</button>
-      <button class="navbtn" onclick="navigateTo('profile-preferences')">Profile/ Preferences</button>
-      <div class="dropdown right">
-        <button class="dropbtn" onclick="toggleOptions()">
-          <i class="fa fa-user-circle"></i>
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content" id="myDropdown">
-          <button class="dropdownNavbtn" onclick="navigateTo('contact')">Contact Us</button>
-          <button class="dropdownNavbtn" onclick="navigateTo('user-preference')">User Preference</button>
-          <button class="dropdownNavbtn" onclick="navigateTo('account-preference')">Account Preference</button>
-          <button class="dropdownNavbtn" onclick="navigateTo('help')">Help</button>
-          <button class="dropdownNavbtn" onclick="navigateTo('log-out')">Log Out</button>
-        </div>
+    <div class="dropdown dropdown-trading">
+      <button class="dropbtn dropbtn-trading">
+        Trading
+      </button>
+      <div class="dropdown-content dropdown-trading-content">
+        <button class="dropdownNavbtn" onclick="navigateTo('trading-order')">Order Status</button>
       </div>
+    </div>
+    <div class="dropdown dropdown-research">
+      <button class="dropbtn dropbtn-research">
+        Research
+      </button>
+      <div class="dropdown-content dropdown-research-content">
+        <button class="dropdownNavbtn" onclick="navigateTo('research-findSymbol')">Find Symbol</button>
+        <button class="dropdownNavbtn" onclick="navigateTo('research-optionChain')">Options Chains</button>
+        <button class="dropdownNavbtn" onclick="navigateTo('research-marketOverview')">Market Overview</button>
+        <button class="dropdownNavbtn" onclick="navigateTo('research-advancedChart')">Advanced Chart</button>
+        <button class="dropdownNavbtn" onclick="navigateTo('research-marketsEventCalendar')">Market Events Calendar</button>
+        <button class="dropdownNavbtn" onclick="navigateTo('research-stockAlerts')">Stock Alerts</button>
+        <button class="dropdownNavbtn" onclick="navigateTo('research-stockFundamentalsReport')">Stock Fundamentals Report</button>
+        <button class="dropdownNavbtn" onclick="navigateTo('research-mutualFund')">Mutual Fund / ETF Fundamentals Report: </button>
+        <button class="dropdownNavbtn" onclick="navigateTo('research-screener')">Screener</button>
+      </div>
+    </div>
+    <div class="dropdown dropdown-calculators">
+      <button class="dropbtn dropbtn-calculators">
+        Calculators
+      </button>
+      <div class="dropdown-content dropdown-calculators-content">
+        <button class="dropdownNavbtn" onclick="navigateTo('calculator-collegeCost')">College Cost</button>
+        <button class="dropdownNavbtn" onclick="navigateTo('calculator-iraComparison')">IRA Comparison</button>
+        <button class="dropdownNavbtn" onclick="navigateTo('calculator-iraEligibility')">IRA Eligibility</button>
+        <button class="dropdownNavbtn" onclick="navigateTo('calculator-iraRothConversion')">IRA Roth Conversion</button>
+        <button class="dropdownNavbtn" onclick="navigateTo('calculator-retirementCost')">Retirement Cost</button>
+      </div>
+    </div>
+    <div class="dropdown dropdown-tools">
+      <button class="dropbtn dropbtn-trading">
+        Tools
+      </button>
+      <div class="dropdown-content dropdown-tools-content">
+        <button class="dropdownNavbtn" onclick="navigateTo('tools-messageCenter')">Message Center</button>
+      </div>
+    </div>
+    <button class="navbtn right" onclick="navigateTo('logout')">Log Out</button>
   </div>
 
   <br><br>
+
 
   <div class="sample-footer">
     <p>Copyright © 2019 WEDBUSH ADVANCED CLEARING SERVICES. All rights reserved.
