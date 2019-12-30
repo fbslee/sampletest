@@ -84,4 +84,5 @@ function navigateTo(location){
             break;
     }
     alert('what is the url that we are navigating to ' + url);
+    console.log("ping the url they give if we navigate to a page where it's not their url https://your-domain-at-Wealthsqope/Modules/Login/keepAlive.php")
 }
