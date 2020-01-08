@@ -13,5 +13,6 @@
   },
   "test": {
     "test": "test"
-  }
+  },
+  "testing": "testing"
 }
