@@ -15,7 +15,7 @@
     "test": "test"
   },
   "testing": {
-    "header": "header test",
+    "header": "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"https://raw.githack.com/fbslee/sampletest/master/sample.css\">\n<script type=\"text/javascript\" src=\"https://raw.githack.com/fbslee/sampletest/master/sample.js\"></script>\n<<style type=\"text/css\">\n .fontColor { color: #ffffff !important; } \n .backColor { background-color: #1d4789 !important; } \n .btnColor:hover { background: color: #073763 !important } \n </style>\n<script type=\"text/javascript\">\nvar logo = \"\"\nvar currentURL = \"https://wdbb-wdb.inv.qa.wm.scivantage.com\";\n</script>",
     "preContent": "pre content test",
     "footer": "footer test"
   }
