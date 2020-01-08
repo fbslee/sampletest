@@ -15,8 +15,8 @@
     "test": "test"
   },
   "testing": {
-    "Header": "header test",
-    "PreContent": "pre content test",
-    "Footer": "footer test"
+    "header": "header test",
+    "preContent": "pre content test",
+    "footer": "footer test"
   }
 }
