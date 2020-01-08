@@ -1,5 +1,7 @@
 {
-    "head": "<style type=\"text\/css\">\n.client-site-header {\n  width: 100%;\n  font-size: 14px;\n}\n.client-site-footer {\n  width: 100%;\n  font-size: 11px;\n}\n<\/style>",
-    "preContent": "<div class=\"client-site-header\">\n  Welcome to Client Site<br \/>\n  <a href=\"https:\/\/client-site.com\/Modules\/Login\/logoutExpand.php\">Log Out<\/a>\n<\/div>",
-    "footer": "<div class=\"client-site-footer\">\n  Copyright 2019 Client Site\n<\/div>"
+    "test": {
+        "head": "<style type=\"text\/css\">\n.client-site-header {\n  width: 100%;\n  font-size: 14px;\n}\n.client-site-footer {\n  width: 100%;\n  font-size: 11px;\n}\n<\/style>",
+        "preContent": "<div class=\"client-site-header\">\n  Welcome to Client Site<br \/>\n  <a href=\"https:\/\/client-site.com\/Modules\/Login\/logoutExpand.php\">Log Out<\/a>\n<\/div>",
+        "footer": "<div class=\"client-site-footer\">\n  Copyright 2019 Client Site\n<\/div>"
+    }
 }
