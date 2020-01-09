@@ -1,4 +1,5 @@
 function navigateTo(location){
+    console.log('running navigate to', location)
     let url = "";
     switch(location){
         case "home":
@@ -83,6 +84,5 @@ function navigateTo(location){
             url = "/Web/user/dashboard/ucd/";
             break;
     }
-    alert('what is the url that we are navigating to ' + this.currentURL + url);
     window.location.href = this.currentURL + url;
 }
