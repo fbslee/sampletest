@@ -2,18 +2,19 @@ body{
   margin: 0;
 }
 
-.logo{
+.sample .logo{
   width: 100%;
+  background-color: #999999;
 }
 
-.navbar {
+.sample .navbar {
   overflow: hidden;
   background-color: #999999;
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
 }
 
-.navbar .navbtn {
+.sample .navbar .navbtn {
   cursor: pointer;
   float: left;
   font-size: 16px;  
@@ -26,7 +27,7 @@ body{
   margin: 0;
 }
 
-.dropdown-content {
+.sample .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -35,7 +36,7 @@ body{
   z-index: 1;
 }
 
-.dropdown-content .dropdownNavbtn {
+.sample .dropdown-content .dropdownNavbtn {
   cursor: pointer;
   float: none;
   color: black;
@@ -50,16 +51,16 @@ body{
   width: 100%;
 }
 
-.dropdown-content .dropdownNavbtn:hover {
+.sample .dropdown-content .dropdownNavbtn:hover {
   background-color: #ddd;
 }
 
-.dropdown {
+.sample .dropdown {
   float: left;
   overflow: hidden;
 }
 
-.dropdown .dropbtn {
+.sample .dropdown .dropbtn {
   cursor: pointer;
   font-size: 16px;  
   border: none;
@@ -71,31 +72,31 @@ body{
   margin: 0;
 }
 
-.navbar .navbtn:hover, .dropdown:hover .dropbtn {
+.sample .navbar .navbtn:hover, .sample .dropdown:hover .dropbtn {
   background-color: #f5f5f562;
 }
 
-.dropdown-accounts:hover .dropdown-accounts-content {
+.sample .dropdown-accounts:hover .dropdown-accounts-content {
   display: block;
 }
 
-.dropdown-trading:hover .dropdown-trading-content {
+.sample .dropdown-trading:hover .dropdown-trading-content {
   display: block;
 }
 
-.dropdown-research:hover .dropdown-research-content {
+.sample .dropdown-research:hover .dropdown-research-content {
   display: block;
 }
 
-.dropdown-calculators:hover .dropdown-calculators-content {
+.sample .dropdown-calculators:hover .dropdown-calculators-content {
   display: block;
 }
 
-.dropdown-tools:hover .dropdown-tools-content {
+.sample .dropdown-tools:hover .dropdown-tools-content {
   display: block;
 }
 
-.dropdown-options:hover .dropdown-options-content {
+.sample .dropdown-options:hover .dropdown-options-content {
   display: block;
 }
 
@@ -110,10 +111,6 @@ body{
 
 .right {
   float: right !important;
-}
-
-.logo {
-  background-color: #999999;
 }
 
 .sample-footer{
