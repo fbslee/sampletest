@@ -86,3 +86,7 @@ function navigateTo(location){
     }
     window.location.href = this.currentURL + url;
 }
+
+$scope.navigateTo = function(location){
+    this.navigateTo(location)
+}
