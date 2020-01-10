@@ -5,6 +5,7 @@ body{
 .sample .logo{
   width: 100%;
   background-color: #999999;
+  padding: 20px;
 }
 
 .sample .navbar {
