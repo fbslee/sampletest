@@ -1,6 +1,6 @@
 function navigateTo(location){
-    console.log('running navigate to', location)
-    let url = "";
+    var localApp = false;
+    var url = "";
     switch(location){
         case "home":
             url = "/Web/user/dashboard/ucd/";
@@ -81,8 +81,13 @@ function navigateTo(location){
             url = "/Modules/Login/logoutExpand.php";
             break;
         default:
+            localApp = true;
             url = "/Web/user/dashboard/ucd/";
             break;
     }
-    window.location.href = this.currentURL + url;
+    if(!localApp){
+        window.location.href = this.sciURL + url;
+    } else {
+        window.location.href = this.clientURL + location;
+    }
 }
