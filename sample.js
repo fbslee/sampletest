@@ -1,5 +1,6 @@
 function navigateTo(location){
     var localApp = false;
+    var outsideApp = false;
     var url = "";
     switch(location){
         case "home":
@@ -80,14 +81,24 @@ function navigateTo(location){
         case "logout":
             url = "/Modules/Login/logoutExpand.php";
             break;
+        case "FINRA":
+            outsideApp = true;
+            url = "http://www.finra.org/";
+            break;
+        case "SIPC":
+            outsideApp = true;
+            url = "https://www.sipc.org/";
+            break;
         default:
             localApp = true;
             url = "/Web/user/dashboard/ucd/";
             break;
     }
-    if(!localApp){
-        window.location.href = this.sciURL + url;
-    } else {
+    if(localApp){
         window.location.href = this.clientURL + location;
+    } else if (outsideApp) {
+        window.open(url, '_blank')
+    } else {
+        window.location.href = this.sciURL + url;
     }
 }
