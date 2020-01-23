@@ -2,20 +2,20 @@ body{
   margin: 0;
 }
 
-.sample .logo{
+.wdb-sample .wdb-logo{
   width: 100%;
   background-color: #999999;
   padding: 20px;
 }
 
-.sample .navbar {
+.wdb-sample .wdb-navbar {
   overflow: hidden;
   background-color: #999999;
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
 }
 
-.sample .navbar .navbtn {
+.wdb-sample .wdb-navbar .wdb-navbtn {
   cursor: pointer;
   float: left;
   font-size: 16px;  
@@ -28,16 +28,16 @@ body{
   margin: 0;
 }
 
-.sample .dropdown-content {
+.wdb-sample .wdb-dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.wdb-2);
   z-index: 1;
 }
 
-.sample .dropdown-content .dropdownNavbtn {
+.wdb-sample .wdb-dropdown-content .wdb-dropdownNavbtn {
   cursor: pointer;
   float: none;
   color: black;
@@ -52,16 +52,16 @@ body{
   width: 100%;
 }
 
-.sample .dropdown-content .dropdownNavbtn:hover {
+.wdb-sample .wdb-dropdown-content .wdb-dropdownNavbtn:hover {
   background-color: #ddd;
 }
 
-.sample .dropdown {
+.wdb-sample .wdb-dropdown {
   float: left;
   overflow: hidden;
 }
 
-.sample .dropdown .dropbtn {
+.wdb-sample .wdb-dropdown .wdb-dropbtn {
   cursor: pointer;
   font-size: 16px;  
   border: none;
@@ -73,57 +73,57 @@ body{
   margin: 0;
 }
 
-.sample .navbar .navbtn:hover, .sample .dropdown:hover .dropbtn {
+.wdb-sample .wdb-navbar .wdb-navbtn:hover, .wdb-sample .wdb-dropdown:hover .wdb-dropbtn {
   background-color: #f5f5f562;
 }
 
-.sample .dropdown-accounts:hover .dropdown-accounts-content {
+.wdb-sample .wdb-dropdown-accounts:hover .wdb-dropdown-accounts-content {
   display: block;
 }
 
-.sample .dropdown-trading:hover .dropdown-trading-content {
+.wdb-sample .wdb-dropdown-trading:hover .wdb-dropdown-trading-content {
   display: block;
 }
 
-.sample .dropdown-research:hover .dropdown-research-content {
+.wdb-sample .wdb-dropdown-research:hover .wdb-dropdown-research-content {
   display: block;
 }
 
-.sample .dropdown-calculators:hover .dropdown-calculators-content {
+.wdb-sample .wdb-dropdown-calculators:hover .wdb-dropdown-calculators-content {
   display: block;
 }
 
-.sample .dropdown-tools:hover .dropdown-tools-content {
+.wdb-sample .wdb-dropdown-tools:hover .wdb-dropdown-tools-content {
   display: block;
 }
 
-.sample .dropdown-options:hover .dropdown-options-content {
+.wdb-sample .wdb-dropdown-options:hover .wdb-dropdown-options-content {
   display: block;
 }
 
-.sample .dropdown-documents:hover .dropdown-documents-content {
+.wdb-sample .wdb-dropdown-documents:hover .wdb-dropdown-documents-content {
   display: block;
 }
 
-.dropbtn-options {
+.wdb-dropbtn-options {
   font-size: 18px !important;
   padding: 12px 16px 13px 16px!important;
 }
 
-.dropdown-options-content{
+.wdb-dropdown-options-content{
   right: 0;
 }
 
-.right {
+.wdb-right {
   float: right !important;
 }
 
-.sample-footer{
+.wdb-sample-footer{
   background-color: #f5f5f5;
   padding: 1px;
 }
 
-.footerbtn {
+.wdb-footerbtn {
   cursor: pointer;
   color: black;
   text-decoration: none;
@@ -135,6 +135,6 @@ body{
   background-color: transparent;
 }
 
-.footerbtn:hover{
+.wdb-footerbtn:hover{
   text-decoration: underline;
 }
