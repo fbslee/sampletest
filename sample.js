@@ -97,7 +97,7 @@ function navigateTo(location){
     if(localApp){
         window.location.href = this.clientURL + location;
     } else if (outsideApp) {
-        window.open(url, '_blank')
+        window.open(url, '_blank');
     } else {
         window.location.href = this.sciURL + url;
     }
