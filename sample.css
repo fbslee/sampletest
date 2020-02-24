@@ -29,6 +29,11 @@ body{
   margin: 0;
 }
 
+.wdb-sample .wdb-navbar .wdb-navbtn:hover {
+  color: #00A7CF;
+  text-decoration: underline;
+}
+
 .wdb-sample .wdb-dropdown-content {
   display: none;
   position: absolute;
@@ -75,6 +80,11 @@ body{
   margin: 0;
 }
 
+.wdb-sample .wdb-dropdown .wdb-dropbtn:hover {
+  color: #00A7CF;
+  text-decoration: underline;
+}
+
 .wdb-sample .wdb-navbar .wdb-navbtn:hover, .wdb-sample .wdb-dropdown:hover .wdb-dropbtn {
   background-color: #f5f5f562;
 }
@@ -110,6 +120,7 @@ body{
 .wdb-dropbtn-options {
   font-size: 18px !important;
   padding: 12px 16px 13px 16px!important;
+  text-decoration: none !important;
 }
 
 .wdb-dropdown-options-content{
