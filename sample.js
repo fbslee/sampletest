@@ -95,7 +95,7 @@ function navigateTo(location){
             break;
     }
     if(localApp){
-        if(sviInvestorAppConfig && sviInvestorAppConfig.currentAccount && location && (location.includes("preferences") || location.includes("document"))){
+        if(sviInvestorAppConfig && sviInvestorAppConfig.currentAccount && location && (location.match(/preferences/gi) || location.match(/document/gi))){
             window.location.href = this.clientURL + location + "?a=" + sviInvestorAppConfig.currentAccount;
         } else {
             window.location.href = this.clientURL + location;
